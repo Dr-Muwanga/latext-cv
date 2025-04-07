@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{MUWANGA DAVID RICHARD}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Medical Doctor $\sim$ Full Stack Developer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{http://www.portifolio.medvase.com}{portfolio.com}}\\ 
+    \icon{Phone}{11}{+256 7845 80305}\\
+    \icon{MapMarker}{11}{Mbarara, Uganda}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:dmuwanga25@gmail.com}{dmuwanga25@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/Dr-Muwanga}{Dr-Muwanga}}\\
+    \icon{LinkedinSquare}{11}{\href{https://ug.linkedin.com/in/muwanga-david-2a662096}{muwangadavid}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Summary}
+    Highly motivated and results-oriented self-taught Full-Stack Web Developer with a unique foundation in Medicine and Surgery (MBChB). Proven ability to rapidly acquire and apply complex technical knowledge, coupled with strong analytical and problem-solving skills honed through rigorous medical training. Passionate about building impactful web applications that bridge technology and healthcare, or contribute to any dynamic development team.
+    
+\cvsect{Skills}
+        \textbf{Languages:}
+        \thinspace
+        JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL
+    \vspace{2mm}
+    
+        \textbf{Front-End:}
+        \thinspace
+        React, Next js, Redux/Context API, Tanstack Query, Responsive Design, RESTful APIs
+    \vspace{2mm}
+    
+        \textbf{Back-End:}
+        \thinspace
+        Node.js, Express.js, PostgreSQL, MongoDB, RESTful API Development, Memcached, PgBouncer, Prisma ORM
+    \vspace{2mm}
+    
+        \textbf{DevOps:}
+        \thinspace
+        Cloud Platforms (Digital Ocean), VPS configuration, CI/CD Github pipelines. 
+    \vspace{2mm}
+    
+        \textbf{Others:}
+        \thinspace
+        Git, Docker, npm, Webpack, Babel, Testing (Jest), Nginx, Memcached, Pgbuncer, database replication
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{ React js \\ Node js \\ Express js }
+		{Social App for medics}
+		{\href{https://app.medvase.com}{app.medvase.com}}
+		{A social app hosted on a VPS, built with react js frontend and backend built on node js and express js with postgresql database.
+        Currently has few visitors but with notable traffic}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{09/2024 \\- present}
+		{Self learning by doing}
+		{Internet and artificial intelligence}
+		{Working on my own project, full stack scaled social media application with users and activity. Improving it daily through research, trial and error and artificial intelligence prompt engineering}
+        
+    \entry
+		{04/2023 \\- 08/2024}
+		{CS101: Introduction to Computer Science I}
+		{Saylor Academy}
+		{Understanding the fundamentals of computer science including history of computers, nomenclature in computer science and object oriented programming. I also got the fundamentals of Java }
+        
+    \entry
+		{04/2023 \\- 06/2024}
+		{Professional Certificate}
+		{Online school Freecodecamp.org}
+		{Acquired foundational information in HTML, CSS JavaScript and react js its framework. I also learned the basics of SQL and NoSQL. I also learned API setup with Node.js and Express.js, authentication, database setup, and integration}
+        
+	\entry
+		{08/2016 \\- 05/2021}
+		{Bachelors of Medicine and Bachelors of Surgery}
+		{Mbarara University of Science and Technology}
+		{I acquired clinical and leadership skills throughout the training process and also sharpened my problem-solving skills and ability to learn, unlearn, and relearn fast.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {09/2024 \\- present}
+		{Social Media App for medical practitioners}
+		{\href{https://app.medvase.com}{app.medvase.com}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {A social app allowing collaboration among medical practitioners in Africa, hosted on a VPS and fully functional.}
+            \item {Built with react js on the frontend and Node js and Express js on the backend with postgresql database.}
+            \item {Memcached for cache layer to reduce database traffic, pgbouncer to manage postgres connection pool, logical replication and HAProxy to ensure high availability}
+        \end{itemize} 
+        % \texttt{SQL} \slashsep \texttt{Excel}
+        }
+	\entry
+		{04/2023 \\- present}
+		{Medical Officer}
+		{Pentagon Medical Centre}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Conducting comprehensive patient assessments, including medical history, physical examinations, and diagnostic tests working on over 80 patients per month of all age groups and gender.
+            \item Formulating and implementing evidence-based treatment plans for patients with various medical conditions and surgical conditions.
+            \item Collaborating with other healthcare departments like laboratory, imaging and pharmacy to provide comprehensive patient-centered care.
+        \end{itemize} 
+        % \texttt{SQL} \slashsep \texttt{Excel}
+        }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{5mm} \textbf{English} - Proficient, \textbf{Luganda} - Proficient, \textbf{Runyankole} - Proficient, \textbf{Kiswahili} - Beginner
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+% \vspace{2pt}
+% 	\cvsect{References}
+%     \vspace{-6pt}
+    
+%     \hspace{5mm} \textbf{English} - Proficient, \textbf{Luganda} - Proficient, \textbf{Runyankole} - Proficient, \textbf{Kiswahili} - Beginner
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
